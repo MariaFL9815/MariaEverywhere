@@ -11,6 +11,9 @@ body {
 * {
   box-sizing: border-box;
 }
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
 
 /* Style inputs */
 input[type=text], select, textarea {
