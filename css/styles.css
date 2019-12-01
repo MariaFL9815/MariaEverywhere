@@ -5,15 +5,13 @@ body {
   padding: 3rem 1.5rem;
   text-align: center;
 }
-.imageQ{
-  height:1000px;
+body {
+  padding-top: 5rem;
 }
-* {
-  box-sizing: border-box;
+.starter-template {
+  padding: 3rem 1.5rem;
+  text-align: center;
 }
-$('#myModal').on('shown.bs.modal', function () {
-  $('#myInput').trigger('focus')
-})
 
 /* Style inputs */
 input[type=text], select, textarea {
@@ -76,12 +74,3 @@ input[type=submit]:hover {
   text-decoration: none;
   border-radius: 50%;
 }
-$('#myCarousel').on('slid.bs.carousel', function (e) {
-  $('#myCarousel').carousel('2') // Will slide to the slide 2 as soon as the transition to slide 1 is finished
-})
-
-$('#myCarousel').carousel('1') // Will start sliding to the slide 1 and returns to the caller
-$('#myCarousel').carousel('2') // !! Will be ignored, as the transition to the slide 1 is not finished !!
-$('#myModal').modal() // initialized with defaults
-$('#myModal').modal({ keyboard: false }) // initialized with no keyboard
-$('#myModal').modal('show') // initializes and invokes show immediately
