@@ -5,13 +5,15 @@ body {
   padding: 3rem 1.5rem;
   text-align: center;
 }
-body {
-  padding-top: 5rem;
+.imageQ{
+  height:1000px;
 }
-.starter-template {
-  padding: 3rem 1.5rem;
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
 
 /* Style inputs */
 input[type=text], select, textarea {
